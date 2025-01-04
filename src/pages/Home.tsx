@@ -4,7 +4,7 @@ import axios from "axios";
 import {useStore} from "../zustand/store"
 import Loading from "./Loading";
 
-const API_URL = "http://politicalradar-api.kro.kr"
+const API_URL = "https://politicalradar-api.xyz"
 
 
 const Home : React.FC = () => {
