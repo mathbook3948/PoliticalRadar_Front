@@ -16,7 +16,15 @@ const Home : React.FC = () => {
 
     const getNews = async () => {
         try {
-            const response = await axios.get(API_URL+"/news")
+            const response = await axios.get(API_URL+"/news", {
+                headers: {
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Credentials": "true",
+                    "Access-Control-Allow-Methods": "GET",
+                    "Access-Control-Allow-Headers": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+                }
+            })
+
 
             setNews(response.data)
 
