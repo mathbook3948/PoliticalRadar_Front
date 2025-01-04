@@ -23,7 +23,7 @@ body {
 
 .container {
     max-width: 1000px;
-    min-height: 100vh;
+    min-height: 50vh;
     margin: 0 auto;
     padding: 0 1rem;
 }
