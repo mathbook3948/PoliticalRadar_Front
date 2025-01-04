@@ -1,0 +1,60 @@
+/* NotReady.css */
+.not-ready-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.not-ready-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+}
+
+.not-ready-icon {
+    width: 100px;
+    height: 100px;
+    color: #ffc107;
+    margin: 0 auto 1rem;
+}
+
+.not-ready-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.not-ready-description {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.not-ready-btn {
+    background-color: #536dfe;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.not-ready-btn:hover {
+    background-color: #3d5afe;
+}
+
+.not-ready-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(83, 109, 254, 0.4);
+}
