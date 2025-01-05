@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Header from "./pages/Header";
 import Home from "./pages/Home";
@@ -15,6 +16,7 @@ function App() {
                     <Route path="/" element={<Home/>}/>
                     <Route path="/analysis" element={<NotReady/>}/>
                 </Routes>
+                <Analytics/>
                 <Footer/>
             </BrowserRouter>
         </div>
