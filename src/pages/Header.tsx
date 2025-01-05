@@ -4,7 +4,7 @@ import {useStore} from "../zustand/store";
 import {Link} from "react-router-dom";
 
 const Header = () => {
-    const { news } = useStore();
+    const {news} = useStore();
 
     const getKSTTime = (utcTime: string) => {
         const date = new Date(utcTime);
@@ -33,16 +33,14 @@ const Header = () => {
                     </div>
                     <div className="subtitle">실시간 정치 뉴스 모니터링 및 분석</div>
                     <p className="update-time">
-                        최근 업데이트: <br/>
-                        <span id="updateTime">
-        {news && (
-            <>
-                UTC : {news.time.toString().substring(0, 10) + " " + news.time.toString().substring(11, 16)}<br/>
-                KST : {news && getKSTTime(news.time)}<br/>
-                (30분 주기로 업데이트)
-            </>
-        )}
-    </span>
+                        최근 업데이트:
+                        {news && (
+
+                            <>
+                                {news.time.toString().substring(0, 10) + " " + news.time.toString().substring(11, 16)} (KST)<br/>
+                                (30분 주기로 업데이트)
+                            </>
+                        )}
                     </p>
 
                 </div>

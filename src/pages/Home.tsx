@@ -25,9 +25,9 @@ const Home : React.FC = () => {
                 }
             })
 
-
-            setNews(response.data)
-
+            if(response.status === 200) {
+                setNews(response.data)
+            }
         } catch (error) {
             console.log(error)
         }
