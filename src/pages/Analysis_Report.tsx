@@ -29,7 +29,7 @@ const KeywordChart = () => {
 
     const getKeywords = async () => {
         try {
-            const response = await axios.get(API_URL+"/keywords", {
+            const response = await axios.get(API_URL+"/news/keywords", {
                 headers: {
                     "Access-Control-Allow-Origin": "*",
                     "Access-Control-Allow-Credentials": "true",
